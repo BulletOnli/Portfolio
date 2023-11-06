@@ -2,7 +2,7 @@ import { Image } from "@chakra-ui/react";
 
 const Skills = () => {
     return (
-        <div className="grid grid-cols-3 lg:grid-cols-6  justify-items-center items-center gap-7">
+        <div className="grid grid-cols-3 lg:grid-cols-6  justify-items-center items-center gap-2 lg:gap-7">
             <Skill src="/html.png" name="HTML" />
             <Skill src="/css.png" name="CSS" />
             <Skill src="/sass.png" name="SASS" />

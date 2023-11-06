@@ -5,7 +5,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const Sidebar = () => {
     return (
-        <div className="w-[30rem] flex flex-col items-center">
+        <div className="w-full lg:w-[30rem] flex flex-col items-center">
             <Image
                 src="/me.JPG"
                 alt="pic"
@@ -17,7 +17,7 @@ const Sidebar = () => {
                 mt={10}
                 aspectRatio={1 / 1}
             />
-            <div className="w-[90%] flex flex-col gap-2 mt-4 p-4 lg:p-0">
+            <div className="lg:w-[90%] flex flex-col gap-2 mt-4 p-4 lg:p-0">
                 <div className="w-full flex flex-col">
                     <p className="text-xl 2xl:text-2xl font-semibold">
                         Gemmuel Dela Peña

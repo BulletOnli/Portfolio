@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 const Readme = () => {
     return (
-        <div className="relative w-full h-[9rem] p-2 lg:p-4 flex justify-center items-center border border-[#2B3138] rounded-lg">
+        <div className="relative w-full h-[9rem] p-2 lg:p-4 mt-4 lg:mt-0 flex justify-center items-center border border-[#2B3138] rounded-lg">
             <div className="absolute top-0 w-full p-3 lg:p-5 flex justify-between items-center">
                 <p className="text-white text-xs">
                     BulletOnli / README
@@ -12,7 +12,7 @@ const Readme = () => {
                 </p>
                 <GoPencil className="cursor-pointer text-[#696E73] " />
             </div>
-            <p className="text-[#30A4D7] tracking-wider text-lg lg:text-2xl font-semibold text-center">
+            <div className="text-[#30A4D7] tracking-wider text-lg lg:text-2xl font-semibold text-center">
                 <Typewriter
                     options={{
                         strings: [
@@ -23,7 +23,7 @@ const Readme = () => {
                         loop: true,
                     }}
                 />
-            </p>
+            </div>
         </div>
     );
 };
