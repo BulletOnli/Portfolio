@@ -4,7 +4,7 @@ import { BiLink } from "react-icons/bi";
 
 const ProjectPage = () => {
     return (
-        <div className="w-full p-10 flex flex-col">
+        <div className="w-full flex flex-col ">
             <h1 className="text-2xl font-semibold mb-6">My Works</h1>
             <div className="w-full grid grid-cols-3 gap-10 justify-items-center justify-center items-center">
                 <div className="project-container w-[17rem] h-[12rem] bg-[url('/linkgrove.png')] bg-center bg-cover ">

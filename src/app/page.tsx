@@ -4,7 +4,7 @@ import React from "react";
 
 const HomePage = () => {
     return (
-        <div className="w-full min-h-screen lg:p-10 flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
             <Readme />
 
             <div className="w-full flex flex-col gap-4 mt-10">

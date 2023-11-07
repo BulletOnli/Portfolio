@@ -1,7 +1,8 @@
 import { Button, HStack, Image } from "@chakra-ui/react";
-import { BsFileEarmarkPdf } from "react-icons/bs";
+import { BsFileEarmarkPdf, BsLinkedin } from "react-icons/bs";
 import { AiOutlineFileProtect } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import Link from "next/link";
 
 const Sidebar = () => {
     return (
@@ -48,9 +49,12 @@ const Sidebar = () => {
                         border={"1px"}
                         borderColor={"#5D6064"}
                         textColor={"#ACCCD9"}
-                        leftIcon={<AiOutlineFileProtect size={18} />}
+                        leftIcon={<BsLinkedin />}
+                        as={Link}
+                        href={"https://www.linkedin.com/in/gemmuel-dela-pena/"}
+                        target="_blank"
                     >
-                        Certificates
+                        LinkedIn
                     </Button>
                 </HStack>
 

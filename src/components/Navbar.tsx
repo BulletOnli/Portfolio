@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="sticky top-0 lg:relative z-50 w-full h-[4rem] lg:h-[5rem] flex justify-center items-center lg:items-end bg-[#010409] border-b border-[#2B3138]">
+            <div className="sticky top-0 z-50 w-full h-[4rem] lg:h-[5rem] flex justify-center items-center lg:items-end bg-[#010409] border-b border-[#2B3138]">
                 <div className="w-full flex lg:hidden items-center justify-between mx-6 lg:mx-0">
                     <h1>Gemmuel</h1>
                     <FiMenu onClick={onOpen} />
