@@ -18,6 +18,17 @@ const config: Config = {
                 roboto: "Roboto, sans-serif",
                 space: "Space Mono, monospace",
             },
+            textColor: {
+                primaryWhite: "#F9FAFB",
+                secondaryGray: "#9CA3AF",
+            },
+            borderColor: {
+                primary: "#1F2937",
+            },
+            backgroundColor: {
+                primary: "#030712",
+                secondary: "#1F2937",
+            },
         },
     },
     plugins: [],

@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="sticky top-0 z-50 w-full h-[4rem] lg:h-[5rem] flex justify-center items-center lg:items-end bg-[#010409] border-b border-[#2B3138]">
+            <div className="sticky top-0 z-50 w-full h-[4rem] lg:h-[5rem] flex justify-center items-center lg:items-end bg-opacity-25 bg-gray-38 shadow-lg backdrop-blur-md backdrop-filter rounded-10 border-b border-primary">
                 <div className="w-full flex lg:hidden items-center justify-between mx-6 lg:mx-0">
                     <h1>Gemmuel</h1>
                     <FiMenu onClick={onOpen} />
@@ -35,7 +35,7 @@ const Navbar = () => {
                         p={2}
                         borderBottom={"1px"}
                         borderColor={pathname === "/" ? "white" : "transparent"}
-                        fontWeight={pathname === "/" ? "semibold" : "normal"}
+                        color={pathname === "/" ? "white" : "#9CA3AF"}
                     >
                         <BsBook color={"#7D8590"} />
                         <p>Overview</p>
@@ -48,9 +48,7 @@ const Navbar = () => {
                         borderColor={
                             pathname === "/projects" ? "white" : "transparent"
                         }
-                        fontWeight={
-                            pathname === "/projects" ? "semibold" : "normal"
-                        }
+                        color={pathname === "/projects" ? "white" : "#9CA3AF"}
                     >
                         <PiBookBookmark size={19} color={"#7D8590"} />
                         <p>Projects</p>
@@ -63,9 +61,7 @@ const Navbar = () => {
                         borderColor={
                             pathname === "/about" ? "white" : "transparent"
                         }
-                        fontWeight={
-                            pathname === "/about" ? "semibold" : "normal"
-                        }
+                        color={pathname === "/about" ? "white" : "#9CA3AF"}
                     >
                         <BsStar color={"#7D8590"} />
                         <p>About Me</p>
@@ -78,9 +74,7 @@ const Navbar = () => {
                         borderColor={
                             pathname === "/contact" ? "white" : "transparent"
                         }
-                        fontWeight={
-                            pathname === "/contact" ? "semibold" : "normal"
-                        }
+                        color={pathname === "/contact" ? "white" : "#9CA3AF"}
                     >
                         <RiContactsFill color={"#7D8590"} />
                         <p>Contact</p>
@@ -109,7 +103,7 @@ const SidebarDrawer = ({
     return (
         <Drawer onClose={onClose} isOpen={isOpen} size="xs">
             <DrawerOverlay />
-            <DrawerContent bg="#0D1117" textColor="white">
+            <DrawerContent bg="#0D1117" textColor="#F9FAFB">
                 <DrawerCloseButton />
                 <DrawerHeader>Menu</DrawerHeader>
                 <DrawerBody>
@@ -121,9 +115,10 @@ const SidebarDrawer = ({
                             py={2}
                             rounded={"lg"}
                             bg={pathname === "/" ? "#30363D" : "transparent"}
+                            onClick={onClose}
                         >
-                            <BsBook size={20} color={"#7D8590"} />
-                            <p className="text-lg">Overview</p>
+                            <BsBook size={17} color={"#7D8590"} />
+                            <p>Overview</p>
                         </HStack>
                         <HStack
                             as={Link}
@@ -136,9 +131,10 @@ const SidebarDrawer = ({
                                     ? "#30363D"
                                     : "transparent"
                             }
+                            onClick={onClose}
                         >
-                            <PiBookBookmark size={21} color={"#7D8590"} />
-                            <p className="text-lg">Projects</p>
+                            <PiBookBookmark size={18} color={"#7D8590"} />
+                            <p>Projects</p>
                         </HStack>
                         <HStack
                             as={Link}
@@ -151,9 +147,10 @@ const SidebarDrawer = ({
                                     ? "#30363D"
                                     : "transparent"
                             }
+                            onClick={onClose}
                         >
-                            <BsStar size={20} color={"#7D8590"} />
-                            <p className="text-lg">About Me</p>
+                            <BsStar size={17} color={"#7D8590"} />
+                            <p>About Me</p>
                         </HStack>
                         <HStack
                             as={Link}
@@ -166,9 +163,10 @@ const SidebarDrawer = ({
                                     ? "#30363D"
                                     : "transparent"
                             }
+                            onClick={onClose}
                         >
-                            <RiContactsFill size={20} color={"#7D8590"} />
-                            <p className="text-lg">Contact</p>
+                            <RiContactsFill size={17} color={"#7D8590"} />
+                            <p>Contact</p>
                         </HStack>
                     </div>
                 </DrawerBody>

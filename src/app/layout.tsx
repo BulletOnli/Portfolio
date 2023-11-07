@@ -21,9 +21,9 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <App>
-                    <div className="relative font-space w-full min-h-screen flex flex-col items-center bg-[#0D1117] text-[#E7E7E7]">
+                    <div className="relative font-space w-full min-h-screen flex flex-col items-center bg-primary text-primaryWhite ">
                         <Navbar />
-                        <div className="w-full max-w-[88rem] p-6 lg:p-10 flex flex-col lg:flex-row lg:gap-[2rem]">
+                        <div className="w-full max-w-[100rem] p-6 lg:p-10 flex flex-col lg:flex-row lg:gap-[2rem] mb-6 lg:mb-0">
                             <Sidebar />
                             {children}
                         </div>

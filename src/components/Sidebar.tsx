@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
     return (
-        <div className="w-full lg:w-[30rem] flex flex-col items-center">
+        <div className="lg:sticky lg:top-[4rem] h-fit w-full lg:w-[30rem] flex flex-col items-center">
             <Image
                 src="/me.JPG"
                 alt="pic"
@@ -23,7 +23,7 @@ const Sidebar = () => {
                     <p className="text-xl 2xl:text-2xl font-semibold">
                         Gemmuel Dela Peña
                     </p>
-                    <p className="text-[#585e68] text-lg">
+                    <p className="text-secondaryGray text-lg">
                         Web developer | MERN
                     </p>
                 </div>
@@ -60,21 +60,21 @@ const Sidebar = () => {
 
                 <div className="mt-4 flex flex-col gap-1">
                     <HStack>
-                        <HiOutlineLocationMarker className=" text-[#ACCCD9]" />
-                        <p className="text-sm text-[#ACCCD9]">
+                        <HiOutlineLocationMarker className=" text-secondaryGray" />
+                        <p className="text-sm text-secondaryGray">
                             Nueva Ecija, Philippines
                         </p>
                     </HStack>
                     <HStack>
-                        <AiOutlineFileProtect className=" text-[#ACCCD9]" />
-                        <p className="text-sm text-[#ACCCD9]">
+                        <AiOutlineFileProtect className=" text-secondaryGray" />
+                        <p className="text-sm text-secondaryGray">
                             Lorem ipsum dolor sit amet.
                         </p>
                         1
                     </HStack>
                     <HStack>
-                        <AiOutlineFileProtect className=" text-[#ACCCD9]" />
-                        <p className="text-sm text-[#ACCCD9]">
+                        <AiOutlineFileProtect className=" text-secondaryGray" />
+                        <p className="text-sm text-secondaryGray">
                             Lorem ipsum dolor sit amet.
                         </p>
                     </HStack>
