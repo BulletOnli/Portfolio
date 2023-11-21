@@ -24,7 +24,7 @@ const Sidebar = () => {
                         Gemmuel Dela Peña
                     </p>
                     <p className="text-secondaryGray text-lg">
-                        Web developer | MERN
+                        Web developer | MERN | NextJS
                     </p>
                 </div>
 

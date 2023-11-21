@@ -10,18 +10,21 @@ const ProjectPage = () => {
                     description="Discover and share all your important links in one place."
                     imgSrc="/projects/linkgrove.png"
                     techStack={["MongoDB", "ExpressTS", "NextTS", "NodeTS"]}
+                    link="https://linkgrove.vercel.app"
                 />
                 <ProjectCard
                     title="Ookra"
                     description="E-Commerce website with User and Seller Account"
                     imgSrc="/projects/ookra.png"
                     techStack={["MongoDB", "ExpressTS", "NextTS", "NodeTS"]}
+                    link="https://github.com/BulletOnli/ookra"
                 />
                 <ProjectCard
                     title="TypeMoko"
                     description="A website to measure your typing speed and accuracy."
                     imgSrc="/projects/typemoko.png"
                     techStack={["HTML", "CSS", "JS"]}
+                    link="https://typemoko.netlify.app"
                 />
             </div>
         </div>

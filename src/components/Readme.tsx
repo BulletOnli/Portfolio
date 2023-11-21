@@ -17,8 +17,8 @@ const Readme = () => {
                 <Typewriter
                     options={{
                         strings: [
+                            "I create websites.",
                             "I love to build things.",
-                            "Things for the web.",
                         ],
                         autoStart: true,
                         loop: true,
