@@ -24,8 +24,8 @@ const ContactForm = () => {
                 toast.success("Message Sent!");
             }}
         >
-            <div className="w-[40rem] flex flex-col items-center border p-6 mt-10 border-[#1F2937]  rounded-xl">
-                <HStack w={"full"}>
+            <div className="w-full lg:w-[40rem] flex flex-col items-center border p-6 mt-10 border-[#1F2937]  rounded-xl">
+                <div className="w-full flex flex-col lg:flex-row gap-2 items-center">
                     <Flex w="full" direction="column">
                         <FormLabel>Name</FormLabel>
                         <Input
@@ -50,7 +50,7 @@ const ContactForm = () => {
                             autoComplete="off"
                         />
                     </Flex>
-                </HStack>
+                </div>
                 <Flex w="full" direction="column" mt={4}>
                     <FormLabel>Message</FormLabel>
                     <Textarea

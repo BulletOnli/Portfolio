@@ -2,7 +2,7 @@ import ContactForm from "@/components/ContactForm";
 
 const ContactPage = () => {
     return (
-        <div className="w-full flex flex-col items-center mt-6 lg:mt-0">
+        <div className="w-full flex flex-col items-center text-center mt-6 lg:mt-0">
             <h1 className="text-3xl font-semibold mb-2 mt-[4rem]">
                 Contact me
             </h1>
