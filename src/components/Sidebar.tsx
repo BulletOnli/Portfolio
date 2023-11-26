@@ -1,7 +1,8 @@
 import { Button, HStack, Image } from "@chakra-ui/react";
 import { BsFileEarmarkPdf, BsLinkedin } from "react-icons/bs";
-import { AiOutlineFileProtect } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
+import { HiOutlineLink } from "react-icons/hi";
 import Link from "next/link";
 
 const Sidebar = () => {
@@ -15,7 +16,6 @@ const Sidebar = () => {
                 rounded="full"
                 border={"2px"}
                 borderColor="#2B3138"
-                mt={10}
                 aspectRatio={1 / 1}
             />
             <div className="lg:w-[90%] flex flex-col gap-2 mt-4 p-4 lg:p-0">
@@ -60,24 +60,53 @@ const Sidebar = () => {
 
                 <div className="mt-4 flex flex-col gap-1">
                     <HStack>
-                        <HiOutlineLocationMarker className=" text-secondaryGray" />
+                        <HiOutlineLocationMarker
+                            size={18}
+                            className="text-secondaryGray"
+                        />
                         <p className="text-sm text-secondaryGray">
                             Nueva Ecija, Philippines
                         </p>
                     </HStack>
                     <HStack>
-                        <AiOutlineFileProtect className=" text-secondaryGray" />
-                        <p className="text-sm text-secondaryGray">
-                            Lorem ipsum dolor sit amet.
-                        </p>
-                        1
+                        <FaGithub className=" text-secondaryGray" />
+                        <Link
+                            href="https://github.com/BulletOnli"
+                            target="_blank"
+                            className="text-sm text-secondaryGray hover:underline hover:text-blue-500"
+                        >
+                            https://github.com/BulletOnli
+                        </Link>
                     </HStack>
-                    <HStack>
-                        <AiOutlineFileProtect className=" text-secondaryGray" />
-                        <p className="text-sm text-secondaryGray">
-                            Lorem ipsum dolor sit amet.
-                        </p>
-                    </HStack>
+                </div>
+
+                <div className="w-full h-[1px] bg-[#1F2937] my-4"></div>
+                <p>Socials</p>
+                <div className="flex items-center">
+                    <Link href="https://instagram.com/gem.muel" target="_blank">
+                        <Image src="/socials/instagram.png" w={47} h={47} />
+                    </Link>
+                    <Link
+                        href="https://www.facebook.com/gemmuel.delapena/"
+                        target="_blank"
+                        className="-ml-[1.3rem]"
+                    >
+                        <Image src="/socials/facebook.png" w={43} h={43} />
+                    </Link>
+                    <Link
+                        href="https://www.tiktok.com/@bulletonli"
+                        target="_blank"
+                        className="-ml-[1rem]"
+                    >
+                        <Image src="/socials/tiktok.png" w={47} h={47} />
+                    </Link>
+                    <Link
+                        href="https://www.youtube.com/@bulletonli"
+                        target="_blank"
+                        className="-ml-[1rem]"
+                    >
+                        <Image src="/socials/youtube.png" w={45} h={45} />
+                    </Link>
                 </div>
             </div>
         </div>

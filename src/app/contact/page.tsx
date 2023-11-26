@@ -1,9 +1,17 @@
-import React from "react";
+import ContactForm from "@/components/ContactForm";
 
 const ContactPage = () => {
     return (
-        <div className="w-full h-auto flex justify-center items-center">
-            Under Developement
+        <div className="w-full flex flex-col items-center mt-6 lg:mt-0">
+            <h1 className="text-3xl font-semibold mb-2 mt-[4rem]">
+                Contact me
+            </h1>
+            <p className="text-[#9197A4]">Want to order a project?</p>
+            <p className="text-[#9197A4]">
+                Or do you just want to stay in touch?
+            </p>
+
+            <ContactForm />
         </div>
     );
 };

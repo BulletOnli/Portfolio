@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* border - #1F2937
+mainbg - #030712
+secondaryText/ gray - #9CA3AF
+mainText - #F9FAFB */
+
 .project-container {
     position: relative;
 }

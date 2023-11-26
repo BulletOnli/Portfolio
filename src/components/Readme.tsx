@@ -13,13 +13,10 @@ const Readme = () => {
                 </p>
                 <GoPencil className="cursor-pointer text-secondaryGray " />
             </div>
-            <div className="text-[#30A4D7] tracking-wider text-lg lg:text-2xl font-semibold text-center">
+            <div className="text-[#30A4D7] tracking-wider text-lg lg:text-2xl flex font-semibold text-center">
                 <Typewriter
                     options={{
-                        strings: [
-                            "I create websites.",
-                            "I love to build things.",
-                        ],
+                        strings: ["I build things for the web!"],
                         autoStart: true,
                         loop: true,
                     }}
