@@ -36,7 +36,7 @@ const Skills = () => {
                 src="/firebase.png"
                 name="Firebase"
             />
-            <Skill width={["40px", "80px"]} src="/zustand.png" name="Zustand" />
+            <Skill width={["60px", "80px"]} src="/zustand.png" name="Zustand" />
             <Skill
                 width={["32px", "40px"]}
                 src="/reactquery.png"

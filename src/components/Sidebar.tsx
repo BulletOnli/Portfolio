@@ -2,7 +2,7 @@ import { Button, HStack, Image } from "@chakra-ui/react";
 import { BsFileEarmarkPdf, BsLinkedin } from "react-icons/bs";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
-import { HiOutlineLink } from "react-icons/hi";
+import { IoMailOpenOutline } from "react-icons/io5";
 import Link from "next/link";
 
 const Sidebar = () => {
@@ -69,6 +69,15 @@ const Sidebar = () => {
                         </p>
                     </HStack>
                     <HStack>
+                        <IoMailOpenOutline className=" text-secondaryGray" />
+                        <Link
+                            href="mailto:bulletlangto@gmail.com"
+                            className="text-sm text-secondaryGray hover:underline hover:text-blue-500"
+                        >
+                            bulletlangto@gmail.com
+                        </Link>
+                    </HStack>
+                    <HStack>
                         <FaGithub className=" text-secondaryGray" />
                         <Link
                             href="https://github.com/BulletOnli"
@@ -83,29 +92,32 @@ const Sidebar = () => {
                 <div className="w-full h-[1px] bg-[#1F2937] my-4"></div>
                 <p>Socials</p>
                 <div className="flex items-center">
-                    <Link href="https://instagram.com/gem.muel" target="_blank">
-                        <Image src="/socials/instagram.png" w={47} h={47} />
-                    </Link>
                     <Link
-                        href="https://www.facebook.com/gemmuel.delapena/"
+                        href="https://www.youtube.com/@bulletonli"
                         target="_blank"
-                        className="-ml-[1.3rem]"
                     >
-                        <Image src="/socials/facebook.png" w={43} h={43} />
+                        <Image src="/socials/youtube.png" w={39} h={39} />
                     </Link>
                     <Link
                         href="https://www.tiktok.com/@bulletonli"
                         target="_blank"
                         className="-ml-[1rem]"
                     >
-                        <Image src="/socials/tiktok.png" w={47} h={47} />
+                        <Image src="/socials/tiktok.png" w={42} h={42} />
                     </Link>
                     <Link
-                        href="https://www.youtube.com/@bulletonli"
+                        href="https://www.facebook.com/gemmuel.delapena/"
                         target="_blank"
                         className="-ml-[1rem]"
                     >
-                        <Image src="/socials/youtube.png" w={45} h={45} />
+                        <Image src="/socials/facebook.png" w={37} h={37} />
+                    </Link>
+                    <Link
+                        href="https://instagram.com/gem.muel"
+                        target="_blank"
+                        className="-ml-[1rem]"
+                    >
+                        <Image src="/socials/instagram.png" w={45} h={45} />
                     </Link>
                 </div>
             </div>

@@ -5,8 +5,9 @@ import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
-    title: "Gemmuel",
-    description: "Gemmuel Dela Peña's Portfolio",
+    title: "Gemmuel | Web Developer",
+    description:
+        "A Full stack web developer based on the Philippines. Let's collaborate and bring your ideas to life!",
     icons: {
         icon: "/bulletlogo.png",
     },
