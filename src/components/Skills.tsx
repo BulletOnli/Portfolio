@@ -31,6 +31,7 @@ const Skills = () => {
             />
             <Skill width={["32px", "40px"]} src="/mongo.png" name="MongoDB" />
             <Skill width={["60px", "70px"]} src="/chakra.png" name="ChakraUI" />
+            <Skill width={["32px", "40px"]} src="/shadcn.png" name="ShadcnUI" />
             <Skill
                 width={["40px", "50px"]}
                 src="/firebase.png"
@@ -42,8 +43,14 @@ const Skills = () => {
                 src="/reactquery.png"
                 name="React Query"
             />
-            <Skill width={["32px", "40px"]} src="/git.png" name="Git" />
+            <Skill width={["28px", "32px"]} src="/postman.png" name="Postman" />
             <Skill width={["28px", "32px"]} src="/figma.png" name="Figma" />
+            <Skill width={["32px", "40px"]} src="/git.png" name="Git" />
+            <Skill width={["32px", "40px"]} src="/github.png" name="Github" />
+            <Skill width={["28px", "32px"]} src="/gitlab.png" name="Gitlab" />
+            <Skill width={["28px", "32px"]} src="/slack.png" name="Slack" />
+            <Skill width={["32px", "40px"]} src="/jira.png" name="Jira" />
+            <Skill width={["40px", "50px"]} src="/chatgpt.png" name="ChatGPT" />
         </div>
     );
 };

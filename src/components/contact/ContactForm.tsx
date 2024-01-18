@@ -10,7 +10,7 @@ import {
     Textarea,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
-import { IoArrowForward } from "react-icons/io5";
+import ContactFormBtn from "./ContactFormBtn";
 
 const ContactForm = () => {
     const formRef = useRef<HTMLFormElement>(null);
@@ -62,14 +62,7 @@ const ContactForm = () => {
                     />
                 </Flex>
                 <Flex w="full" justifyContent="end">
-                    <Button
-                        rightIcon={<IoArrowForward />}
-                        colorScheme="teal"
-                        mt={4}
-                        type="submit"
-                    >
-                        Send
-                    </Button>
+                    <ContactFormBtn />
                 </Flex>
             </div>
         </form>
