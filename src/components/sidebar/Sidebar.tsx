@@ -1,8 +1,8 @@
 import { Button, HStack, Image } from "@chakra-ui/react";
 import { BsFileEarmarkPdf, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
-import Socials from "../Socials";
 import SidebarLinks from "./SidebarLinks";
+import SocialsGrid from "./SocialsGrid";
 
 const Sidebar = () => {
     return (
@@ -61,7 +61,7 @@ const Sidebar = () => {
 
                 <div className="w-full h-[1px] bg-[#1F2937] my-4"></div>
                 <p>Socials</p>
-                <Socials />
+                <SocialsGrid />
             </div>
         </div>
     );

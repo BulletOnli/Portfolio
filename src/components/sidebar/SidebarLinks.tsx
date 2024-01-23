@@ -25,26 +25,6 @@ const SidebarLinks = () => {
                     bulletlangto@gmail.com
                 </Link>
             </HStack>
-            <HStack>
-                <FaGithub className=" text-secondaryGray" />
-                <Link
-                    href="https://github.com/BulletOnli"
-                    target="_blank"
-                    className="text-sm text-secondaryGray hover:underline hover:text-blue-500"
-                >
-                    github.com/BulletOnli
-                </Link>
-            </HStack>
-            <HStack>
-                <FaGitlab className=" text-secondaryGray" />
-                <Link
-                    href="https://gitlab.com/BulletOnli"
-                    target="_blank"
-                    className="text-sm text-secondaryGray hover:underline hover:text-blue-500"
-                >
-                    gitlab.com/BulletOnli
-                </Link>
-            </HStack>
         </div>
     );
 };
