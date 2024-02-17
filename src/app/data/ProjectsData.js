@@ -37,4 +37,11 @@ export const TeamProjects = [
     techStack: ["React", "Tailwind"],
     link: "https://parknbrews.netlify.app",
   },
+  {
+    title: "Vibely",
+    description: "A social media web app",
+    imgSrc: "/projects/vibely.png",
+    techStack: ["NextJS", "Tailwind", "Typescript", "NestJS"],
+    link: "https://vibelyofficial.vercel.app",
+  },
 ];

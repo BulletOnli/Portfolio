@@ -14,7 +14,7 @@ const ProjectCard = (props: ProjectType) => {
     <Link
       href={props.link || "/"}
       target="_blank"
-      className="w-[16rem] min-h-[20rem] lg:w-[23rem] p-4 flex flex-col justify-evenly items-center hover:bg-[#0E0A26] bg-[#050914] gap-2 border border-primary rounded-xl"
+      className="w-[16rem] min-h-[20rem] lg:w-[23rem] p-4 flex flex-col justify-evenly items-center hover:bg-[#050914] gap-2 border border-primary rounded-xl"
     >
       <Image
         src={props.imgSrc}
