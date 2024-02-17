@@ -1,0 +1,40 @@
+export const PersonalProjects = [
+  {
+    title: "QuizTwist",
+    description: "Quiz Classroom app with Tab-switching restricted feature",
+    imgSrc: "/projects/quiztwist.png",
+    techStack: ["Next14", "Typescript", "MongoDB", "Next Auth"],
+    link: "https://linkgrove.vercel.app",
+  },
+  {
+    title: "Linkgrove",
+    description: "Discover and share all your important links in one place.",
+    imgSrc: "/projects/linkgrove.png",
+    techStack: ["MongoDB", "ExpressTS", "NextTS", "NodeTS"],
+    link: "https://linkgrove.vercel.app",
+  },
+  {
+    title: "Ookra",
+    description: "E-Commerce website with User and Seller Account",
+    imgSrc: "/projects/ookra.png",
+    techStack: ["MongoDB", "ExpressTS", "NextTS", "NodeTS"],
+    link: "https://github.com/BulletOnli/ookra",
+  },
+  {
+    title: "TypeMoko",
+    description: "A website to measure your typing speed and accuracy.",
+    imgSrc: "/projects/typemoko.png",
+    techStack: ["HTML", "CSS", "JS"],
+    link: "https://typemoko.netlify.app",
+  },
+];
+
+export const TeamProjects = [
+  {
+    title: "Park N' Brews",
+    description: "Landing page of a Coffee Shop",
+    imgSrc: "/projects/parknbrews.png",
+    techStack: ["React", "Tailwind"],
+    link: "https://parknbrews.netlify.app",
+  },
+];
