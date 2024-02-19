@@ -4,7 +4,7 @@ export const PersonalProjects = [
     description: "Quiz Classroom app with Tab-switching restricted feature",
     imgSrc: "/projects/quiztwist.png",
     techStack: ["Next14", "Typescript", "MongoDB", "Next Auth"],
-    link: "https://linkgrove.vercel.app",
+    link: "https://quiztwist.vercel.app",
   },
   {
     title: "Linkgrove",
