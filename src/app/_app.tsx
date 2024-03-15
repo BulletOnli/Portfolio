@@ -3,6 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { Toaster } from "sonner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -12,6 +13,7 @@ const App = ({ children }: { children: React.ReactNode }) => {
       </CacheProvider>
       <Toaster />
       <SpeedInsights />
+      <Analytics />
     </>
   );
 };
