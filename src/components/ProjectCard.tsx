@@ -23,6 +23,7 @@ const ProjectCard = (props: ProjectType) => {
         objectFit={"cover"}
         aspectRatio={16 / 9}
         rounded={"lg"}
+        alt="Project img"
       />
       <div className="w-full">
         <p className="font-semibold text-sm lg:text-base mb-1">{props.title}</p>

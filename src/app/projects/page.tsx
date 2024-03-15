@@ -1,6 +1,10 @@
 import ProjectsContainers from "@/components/ProjectsContainers";
-
 import { PersonalProjects, TeamProjects } from "../data/ProjectsData";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+};
 
 const ProjectPage = () => {
   return (

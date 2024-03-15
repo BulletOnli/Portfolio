@@ -5,12 +5,25 @@ import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/sidebar/Sidebar";
 
 export const metadata: Metadata = {
-  title: "Gemmuel | Web Developer",
+  title: {
+    default: "Gemmuel | Web Developer",
+    template: "%s | Gemmuel",
+  },
   description:
     "A Full stack web developer based on the Philippines. Let's collaborate and bring your ideas to life!",
-  icons: {
-    icon: "/bulletlogo.png",
-  },
+  // icons: {
+  //   icon: "/bulletlogo.png",
+  // },
+  keywords: [
+    "gemmuel",
+    "bullet",
+    "gem",
+    "programmer",
+    "developer",
+    "software",
+    "human software engineer",
+    "student",
+  ],
 };
 
 export default function RootLayout({
