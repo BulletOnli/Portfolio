@@ -23,7 +23,7 @@ const Sidebar = () => {
             Gemmuel Dela Peña
           </p>
           <p className="text-secondaryGray text-lg">
-            Web developer | MERN | NextJS
+            Web developer | NextJS | MERN
           </p>
         </div>
 

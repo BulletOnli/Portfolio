@@ -14,22 +14,29 @@ export const PersonalProjects = [
     link: "https://linkgrove.vercel.app",
   },
   {
-    title: "Ookra",
-    description: "E-Commerce website with User and Seller Account",
-    imgSrc: "/projects/ookra.png",
-    techStack: ["MongoDB", "ExpressTS", "NextTS", "NodeTS"],
-    link: "https://github.com/BulletOnli/ookra",
-  },
-  {
     title: "TypeMoko",
     description: "A website to measure your typing speed and accuracy.",
     imgSrc: "/projects/typemoko.png",
     techStack: ["HTML", "CSS", "JS"],
     link: "https://typemoko.netlify.app",
   },
+  {
+    title: "Ookra",
+    description: "E-Commerce website with User and Seller Account",
+    imgSrc: "/projects/ookra.png",
+    techStack: ["MongoDB", "ExpressTS", "NextTS", "NodeTS"],
+    link: "https://github.com/BulletOnli/ookra",
+  },
 ];
 
 export const TeamProjects = [
+  {
+    title: "TBA huehehe",
+    description: "Website of a known ?-pop Group",
+    imgSrc: "",
+    techStack: ["NextJS", "Material UI"],
+    link: "https://github.com/bulletonli",
+  },
   {
     title: "Park N' Brews",
     description: "Landing page of a Coffee Shop",
