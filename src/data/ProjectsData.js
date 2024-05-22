@@ -31,13 +31,6 @@ export const PersonalProjects = [
 
 export const TeamProjects = [
   {
-    title: "TBA huehehe",
-    description: "Website of a known ?-pop Group",
-    imgSrc: "",
-    techStack: ["NextJS", "Material UI"],
-    link: "https://github.com/bulletonli",
-  },
-  {
     title: "Park N' Brews",
     description: "Landing page of a Coffee Shop",
     imgSrc: "/projects/parknbrews.png",

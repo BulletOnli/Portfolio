@@ -1,5 +1,4 @@
 "use client";
-import { submitForm } from "@/lib/actions/action";
 import { toast } from "sonner";
 import {
   Button,
@@ -10,8 +9,9 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
-import ContactFormBtn from "./ContactFormBtn";
 import { useFormStatus } from "react-dom";
+import ContactFormBtn from "./ContactFormBtn";
+import { submitForm } from "../_actions/action";
 
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement>(null);

@@ -1,5 +1,5 @@
-import ProjectsContainers from "@/components/ProjectsContainers";
-import { PersonalProjects, TeamProjects } from "../data/ProjectsData";
+import ProjectsContainers from "@/app/projects/_components/ProjectsContainers";
+import { PersonalProjects, TeamProjects } from "../../data/ProjectsData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
