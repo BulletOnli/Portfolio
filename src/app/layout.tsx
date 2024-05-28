@@ -33,6 +33,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+        />
+        <meta
+          name="google-site-verification"
+          content="gxWlK71Qi7YznAoIX1OaCQoq4d7OZq5U4U0xAgmkC6w"
+        />
+      </head>
       <body>
         <App>
           <div className="relative font-space w-full min-h-screen flex flex-col items-center bg-primary text-primaryWhite ">
