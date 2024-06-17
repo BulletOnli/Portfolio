@@ -10,12 +10,14 @@ export const metadata: Metadata = {
     template: "%s | Gemmuel",
   },
   description:
-    "A Full stack web developer based on the Philippines. Let's collaborate and bring your ideas to life!",
+    "A Front-end web developer based on the Philippines. Let's collaborate and bring your ideas to life!",
   // icons: {
   //   icon: "/bulletlogo.png",
   // },
   keywords: [
     "gemmuel",
+    "Gemmuel Dela Pena",
+    "bulletonli",
     "bullet",
     "gem",
     "programmer",
@@ -23,6 +25,7 @@ export const metadata: Metadata = {
     "software",
     "human software engineer",
     "student",
+    "student developer",
   ],
 };
 
@@ -40,7 +43,7 @@ export default function RootLayout({
         />
         <meta
           name="google-site-verification"
-          content="gxWlK71Qi7YznAoIX1OaCQoq4d7OZq5U4U0xAgmkC6w"
+          content={process.env.GOOGLE_SITE_VERIFICATION}
         />
       </head>
       <body>
