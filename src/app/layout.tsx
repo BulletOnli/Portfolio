@@ -3,14 +3,15 @@ import type { Metadata } from "next";
 import App from "./_app";
 import Navbar from "@/components/common/Navbar";
 import Sidebar from "@/components/common/sidebar/Sidebar";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: {
     default: "Gemmuel | Web Developer",
-    template: "%s | Gemmuel",
+    template: "%s | Gemmuel Dela Peña",
   },
   description:
-    "A Front-end web developer based on the Philippines. Let's collaborate and bring your ideas to life!",
+    "A Web developer based on the Philippines. Let's collaborate and bring your ideas to life!",
   // icons: {
   //   icon: "/bulletlogo.png",
   // },
@@ -36,16 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
-        />
-        <meta
-          name="google-site-verification"
-          content={process.env.GOOGLE_SITE_VERIFICATION}
-        />
-      </head>
+      <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID!} />
       <body>
         <App>
           <div className="relative font-space w-full min-h-screen flex flex-col items-center bg-primary text-primaryWhite ">
