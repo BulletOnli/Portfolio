@@ -39,6 +39,17 @@ export default function RootLayout({
     <html lang="en">
       <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID!} />
       <body>
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.GOOGLE_TAG_MANAGER_ID}`}
+            height="0"
+            width="0"
+            style={{
+              display: "none",
+              visibility: "hidden",
+            }}
+          ></iframe>
+        </noscript>
         <App>
           <div className="relative font-space w-full min-h-screen flex flex-col items-center bg-primary text-primaryWhite ">
             <Navbar />
