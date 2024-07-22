@@ -7,4 +7,5 @@ export const PROJECT_QUERIES = groq`*[_type == 'project'] | order(_createdAt des
   description,
   techStack,
   link,
+  type
   }`;

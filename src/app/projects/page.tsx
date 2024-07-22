@@ -1,7 +1,7 @@
 import ProjectsContainers from "@/app/projects/_components/ProjectsContainers";
 import { Metadata } from "next";
-import { sanityFetch } from "@/utils/sanity";
-import { PROJECT_QUERIES } from "@/queries/sanityQueries";
+import { PROJECT_QUERIES } from "@/sanity/lib/queries";
+import { sanityFetch } from "@/sanity/lib/client";
 
 export const metadata: Metadata = {
   title: "Projects",

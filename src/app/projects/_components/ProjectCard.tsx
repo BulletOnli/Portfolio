@@ -1,4 +1,4 @@
-import { urlFor } from "@/utils/sanity";
+import { urlFor } from "@/sanity/lib/image";
 import { HStack, Image } from "@chakra-ui/react";
 import Link from "next/link";
 

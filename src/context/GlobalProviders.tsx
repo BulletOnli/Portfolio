@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-const App = ({ children }: { children: React.ReactNode }) => {
+const GlobalProviders = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <CacheProvider>
@@ -18,4 +18,4 @@ const App = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default App;
+export default GlobalProviders;

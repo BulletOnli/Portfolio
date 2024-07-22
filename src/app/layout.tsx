@@ -1,9 +1,9 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import App from "./_app";
 import Navbar from "@/components/common/Navbar";
 import Sidebar from "@/components/common/sidebar/Sidebar";
 import { GoogleTagManager } from "@next/third-parties/google";
+import GlobalProviders from "@/context/GlobalProviders";
 
 export const metadata: Metadata = {
   title: {
@@ -50,7 +50,7 @@ export default function RootLayout({
             }}
           ></iframe>
         </noscript>
-        <App>
+        <GlobalProviders>
           <div className="relative font-space w-full min-h-screen flex flex-col items-center bg-primary text-primaryWhite ">
             <Navbar />
             <div className="w-full max-w-[100rem] p-6 lg:p-10 flex flex-col xl:flex-row xl:gap-[2rem] mb-6 lg:mb-0">
@@ -58,7 +58,7 @@ export default function RootLayout({
               {children}
             </div>
           </div>
-        </App>
+        </GlobalProviders>
       </body>
     </html>
   );
