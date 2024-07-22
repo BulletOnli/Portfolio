@@ -1,24 +1,17 @@
 import { urlFor } from "@/sanity/lib/image";
 import { HStack, Image } from "@chakra-ui/react";
 import Link from "next/link";
+import { Project } from "../../../../sanity.types";
 
-export type ProjectType = {
-  title: string;
-  description: string;
-  imgSrc: any;
-  techStack: string[];
-  link?: string;
-};
-
-const ProjectCard = (props: ProjectType) => {
+const ProjectCard = ({ project }: { project: any }) => {
   return (
     <Link
-      href={props.link || "/"}
+      href={project?.link || "/"}
       target="_blank"
       className="w-[16rem] h-full min-h-[20rem] lg:w-[23rem] p-4 flex flex-col justify-evenly items-center hover:bg-[#050914] gap-2 border border-primary rounded-xl"
     >
       <Image
-        src={urlFor(props.imgSrc)?.url()}
+        src={urlFor(project?.imgSrc)?.url()}
         w={"full"}
         h={170}
         objectFit={"cover"}
@@ -27,13 +20,15 @@ const ProjectCard = (props: ProjectType) => {
         alt="Project img"
       />
       <div className="w-full">
-        <p className="font-semibold text-sm lg:text-base mb-1">{props.title}</p>
+        <p className="font-semibold text-sm lg:text-base mb-1">
+          {project?.title}
+        </p>
         <p className="text-secondaryGray text-xs lg:text-sm">
-          {props.description}
+          {project?.description}
         </p>
       </div>
       <div className="w-full flex items-center flex-wrap gap-1 mt-1">
-        {props.techStack.map((tech) => (
+        {project?.techStack?.map((tech: string) => (
           <div
             key={tech}
             className="text-[10px] lg:text-xs text-secondaryGray lg:py-1 px-2 rounded-md bg-secondary"

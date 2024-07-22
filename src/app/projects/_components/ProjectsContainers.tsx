@@ -12,9 +12,14 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
-import ProjectCard, { ProjectType } from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
+import { PROJECT_QUERIESResult } from "../../../../sanity.types";
 
-const ProjectsContainers = ({ projects }: { projects: ProjectType[] }) => {
+const ProjectsContainers = ({
+  projects,
+}: {
+  projects: PROJECT_QUERIESResult;
+}) => {
   return (
     <Swiper
       slidesPerView={"auto"}
@@ -27,16 +32,10 @@ const ProjectsContainers = ({ projects }: { projects: ProjectType[] }) => {
     >
       {projects.map((project) => (
         <SwiperSlide
-          key={project.title + Math.random()}
+          key={project?.title}
           className="w-fit flex justify-center items-center"
         >
-          <ProjectCard
-            title={project.title}
-            description={project.description}
-            imgSrc={project.imgSrc}
-            techStack={project.techStack}
-            link={project.link || "/"}
-          />
+          <ProjectCard project={project} />
         </SwiperSlide>
       ))}
     </Swiper>
