@@ -1,10 +1,11 @@
+import { urlFor } from "@/utils/sanity";
 import { HStack, Image } from "@chakra-ui/react";
 import Link from "next/link";
 
 export type ProjectType = {
   title: string;
   description: string;
-  imgSrc: string;
+  imgSrc: any;
   techStack: string[];
   link?: string;
 };
@@ -14,10 +15,10 @@ const ProjectCard = (props: ProjectType) => {
     <Link
       href={props.link || "/"}
       target="_blank"
-      className="w-[16rem] min-h-[20rem] lg:w-[23rem] p-4 flex flex-col justify-evenly items-center hover:bg-[#050914] gap-2 border border-primary rounded-xl"
+      className="w-[16rem] h-full min-h-[20rem] lg:w-[23rem] p-4 flex flex-col justify-evenly items-center hover:bg-[#050914] gap-2 border border-primary rounded-xl"
     >
       <Image
-        src={props.imgSrc}
+        src={urlFor(props.imgSrc)?.url()}
         w={"full"}
         h={170}
         objectFit={"cover"}
