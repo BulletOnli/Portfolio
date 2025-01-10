@@ -4,6 +4,7 @@ import Navbar from "@/components/common/Navbar";
 import Sidebar from "@/components/common/sidebar/Sidebar";
 import { GoogleTagManager } from "@next/third-parties/google";
 import GlobalProviders from "@/context/GlobalProviders";
+import Notification from "@/components/Notification";
 
 export const metadata: Metadata = {
   title: {
@@ -28,6 +29,9 @@ export const metadata: Metadata = {
     "student",
     "student developer",
   ],
+  robots: {
+    index: true,
+  },
 };
 
 export default function RootLayout({
@@ -52,6 +56,7 @@ export default function RootLayout({
         </noscript>
         <GlobalProviders>
           <div className="relative font-space w-full min-h-screen flex flex-col items-center bg-primary text-primaryWhite ">
+            <Notification />
             <Navbar />
             <div className="w-full max-w-[100rem] p-6 lg:p-10 flex flex-col xl:flex-row xl:gap-[2rem] mb-6 lg:mb-0">
               <Sidebar />

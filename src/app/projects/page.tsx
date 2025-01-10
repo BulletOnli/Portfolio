@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: "Projects",
 };
 
+export const dynamic = "force-dynamic";
+
 const ProjectPage = async () => {
   const projects = await sanityFetch<PROJECT_QUERIESResult>({
     query: PROJECT_QUERIES,
